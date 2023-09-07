@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="music.png">
+    <!-- Mengganti bi-play-fill dengan font-awesome untuk simbol play -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Musikku | Denny Daffa R</title>
+</head>
+
+<body>
+    <div class="music-container">
+        <div class="music-list">
+            <h2>Playlist</h2>
+            <input type="text" id="searchInput" placeholder="Search...">
+            <ul id="songList"></ul>
+        </div>
+        <div class="music-player">
+            <div class="player-title">
+                <h2>Now Playing</h2>
+                <p id="currentSong">Belum memutar musik</p>
+            </div>
+            <div class="player-image">
+                <img src="image/anonymous.jpg" alt="Album Cover">
+            </div>
+            <audio id="audioPlayer" controls controlsList="nodownload"></audio>
+            <div class="player-controls">
+                <button id="prevBtn" class="control-button">&#171;</button>
+                <button id="playPauseBtn" class="control-button"><i class="fas fa-pause"></i></button>
+                <button id="nextBtn" class="control-button">&#187;</button>
+            </div>
+            <input type="range" id="timeline" class="audio-timeline" min="0" value="0">
+            <button id="shuffleBtn" class="control-button"><i class="fas fa-random"></i></button>
+            <p class="music-app-by">Music App by Denny Daffa Rizaldy</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
